@@ -2,7 +2,7 @@ package backjon;
 
 import java.util.Scanner;
 
-public class test8398 {
+public class test8393 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class test25304 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int X = sc.nextInt();
-        int N = sc.nextInt();
-        int T = 0;
+        int X = sc.nextInt(); //입력 한 총 금액
+        int N = sc.nextInt(); // 물건 종류 수
+        int T = 0; // 계산해서 나온 총 금액
 
 
         for (int i = 0; i < N; i++) {

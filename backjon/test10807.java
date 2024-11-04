@@ -1,16 +1,12 @@
 package backjon;
 
-<<<<<<< HEAD
-=======
 import java.util.ArrayList;
 
->>>>>>> e0bba7ae510b243e1652944b0a9d198631248f30
 import java.util.Scanner;
 
 public class test10807 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
 
         // 정수 N 입력
         int N = sc.nextInt();
@@ -38,25 +34,8 @@ public class test10807 {
         sc.close();
     }
 }
-=======
-        int N = sc.nextInt();
-        ArrayList<Integer> list = new ArrayList<>();
-
-        for (int i = 0; i < N; i++) {
-            list.add(sc.nextInt());
-        }
-        int a = sc.nextInt();
-        int b = 0;
-        for (int lists : list) {
-            if (lists == a) {
-                b++;
-            }
-
-        }
-        System.out.println(b);
-    }
-}
 
 
 
->>>>>>> e0bba7ae510b243e1652944b0a9d198631248f30
+
+

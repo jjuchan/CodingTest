@@ -15,7 +15,7 @@ public class test11659 {
         int M = sc.nextInt(); // 구간 합을 돌릴 횟수
         int A[] = new int[N]; // 입력한 수를 담는 배열
         int B[] = new int[N+1]; // 수의 합을 담는 배열
-        int C[] = new int[M];
+        int C[] = new int[M]; // 구간의 합을 담는 배열
 
         for (int k = 0; k<N; k++){
             A[k] = sc.nextInt();

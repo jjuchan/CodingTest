@@ -22,7 +22,7 @@ public class test2693 {
             Arrays.sort(A);
 
             // 3번째로 큰 값 출력 (정렬된 배열의 7번째 인덱스)
-            result[i] = A[7];
+            result[i] = A[11];
         }
         for(int i = 0; i < result.length; i++) {
             System.out.println(result[i]);

@@ -1,0 +1,17 @@
+package programmers;
+
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+
+    }
+    public String solution(String my_string, String overwrite_string, int s) {
+        StringBuilder stringBuilder = new StringBuilder(my_string);
+
+        for (int i = 0; i < overwrite_string.length(); i++) {
+            stringBuilder.setCharAt(s + i,overwrite_string.charAt(i));
+        }
+        return stringBuilder.toString();
+    }
+}

@@ -1,17 +1,18 @@
 package programmers;
 
-import java.util.Scanner;
+class Solution {
+    public int[] solution(int n) {
+        // n까지의 홀수를 다 출력
 
-public class Solution {
-    public static void main(String[] args) {
+        int[] answer = new int[(n+1)/2]; // 홀수를 구하는 공식 (n+1)/2 짝수는 2n
+        int count = 0;
 
-    }
-    public String solution(String my_string, String overwrite_string, int s) {
-        StringBuilder stringBuilder = new StringBuilder(my_string);
-
-        for (int i = 0; i < overwrite_string.length(); i++) {
-            stringBuilder.setCharAt(s + i,overwrite_string.charAt(i));
+        for(int i = 1; i <= n; i++) {
+           if(i % 2 == 1) {
+               answer[count] = i;
+               count ++;
+           }
         }
-        return stringBuilder.toString();
+        return answer;
     }
 }

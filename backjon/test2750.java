@@ -16,7 +16,7 @@ public class test2750 {
         }
         Arrays.sort(arr);
 
-//        // 선택 정렬
+//        // 버블 정렬
 //        for (int i = 0; i < N - 1; i++) {
 //            for (int j = i +1; j < N; j++) {
 //                if (arr[j] > arr[j + 1]) {

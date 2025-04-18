@@ -1,18 +1,23 @@
 package programmers;
 
-class Solution {
-    public int[] solution(int n) {
-        // n까지의 홀수를 다 출력
+import java.util.*;
 
-        int[] answer = new int[(n+1)/2]; // 홀수를 구하는 공식 (n+1)/2 짝수는 2n
-        int count = 0;
+public class Solution {
+    public int[] solution(int[] arr) {
+        Stack<Integer> stack = new Stack<>();
 
-        for(int i = 1; i <= n; i++) {
-           if(i % 2 == 1) {
-               answer[count] = i;
-               count ++;
-           }
+        for (int num : arr) {
+            if (stack.isEmpty() || stack.peek() != num) {
+                stack.push(num);
+            }
         }
+
+        // Stack → 배열 (순서 유지 위해)
+        int[] answer = new int[stack.size()];
+        for (int i = 0; i < stack.size(); i++) {
+            answer[i] = stack.get(i);
+        }
+
         return answer;
     }
 }

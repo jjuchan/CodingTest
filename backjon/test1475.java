@@ -21,7 +21,7 @@ public class test1475 {
                 count[num]++;
             }
         }
-        count[6] = (count[6] + count[9]) / 2;
+        count[6] = (count[6] + 1) / 2;
         int max = 0;
         for (int i = 0; i < 9; i++) {
             max = Math.max(max, count[i]);

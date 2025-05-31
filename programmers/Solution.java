@@ -1,29 +1,45 @@
 package programmers;
 
-
-import java.util.*;
-
 class Solution {
-    public String solution(String[] participant, String[] completion) {
-        HashMap<String, Integer> map = new HashMap<>();
+    public String solution(String new_id) {
+        String nickname = new_id.toLowerCase();
 
-        // 참가자 목록 저장
-        for (String p : participant) {
-            map.put(p, map.getOrDefault(p, 0) + 1);
-        }
+        StringBuilder sb = new StringBuilder();
+        char[] name = nickname.toCharArray();
 
-        // 완주자 제거
-        for (String c : completion) {
-            map.put(c, map.get(c) - 1);
-        }
-
-        // 값이 1인 사람 = 완주 못함
-        for (String key : map.keySet()) {
-            if (map.get(key) != 0) {
-                return key;
+        for (int i = 0; i < name.length; i++) {
+            char c = name[i];
+            if (Character.isLowerCase(c) || Character.isDigit(c) || c == '-' || c == '_') {
+                sb.append(c);
+            } else if (c == '.') {
+                if (sb.length() == 0 || sb.charAt(sb.length() - 1) != '.') { //비어있거나 마지막이 . 이 아니면
+                    sb.append(c);
+                }
             }
         }
 
-        return ""; // 예외 처리
+        if (sb.length() > 0 && sb.charAt(0) == '.') {
+            sb.deleteCharAt(0);
+        }
+        if (sb.length() > 0 && sb.charAt(sb.length() - 1) == '.') {
+            sb.deleteCharAt(sb.length() - 1);
+        }
+
+        if (sb.length() == 0) {
+            sb.append('a');
+        }
+
+        if (sb.length() >= 16) {
+            sb.delete(15, sb.length());
+            if (sb.charAt(sb.length() - 1) == '.') {
+                sb.deleteCharAt(sb.length() - 1);
+            }
+        }
+
+        while (sb.length() < 3) {
+            sb.append(sb.charAt(sb.length() - 1));
+        }
+
+        return sb.toString();
     }
 }

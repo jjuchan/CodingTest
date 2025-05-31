@@ -1,6 +1,6 @@
-package programmers;
+package programmers.day4;
 
-class Solution {
+class practice7 {
     public String[] solution(int n, int[] arr1, int[] arr2) {
         String[] answer = new String[n];  // 최종 지도 문자열 배열
 

@@ -1,4 +1,4 @@
-package programmers.day1;
+package programmers.days.day1;
 
 public class Practice4 {
     public static void main(String[] args) {

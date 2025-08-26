@@ -1,4 +1,4 @@
-package programmers.day4;
+package programmers.days.day4;
 
 class practice7 {
     public String[] solution(int n, int[] arr1, int[] arr2) {

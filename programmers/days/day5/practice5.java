@@ -1,4 +1,4 @@
-package programmers.day5;
+package programmers.days.day5;
 
 import java.util.HashSet;
 import java.util.Set;

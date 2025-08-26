@@ -1,4 +1,4 @@
-package programmers.dfs;
+package programmers.algo.dfs;
 
 import java.util.*;
 import java.io.*;

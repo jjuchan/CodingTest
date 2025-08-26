@@ -1,4 +1,4 @@
-package programmers.day3;
+package programmers.days.day3;
 
 public class Practice2 {
 }

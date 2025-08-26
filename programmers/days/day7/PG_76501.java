@@ -1,4 +1,4 @@
-package programmers.day7;
+package programmers.days.day7;
 
 public class PG_76501 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package programmers.stackque;
+package programmers.algo.stackque;
 
 import java.util.Arrays;
 

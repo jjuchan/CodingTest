@@ -1,4 +1,4 @@
-# CodingTest
+git # CodingTest
 코테 풀이과정 정리
 
 코테 단계별로 천천히 한 단계 뿌셔보겠습니다.

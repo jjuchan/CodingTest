@@ -1,2 +1,4 @@
-package programmers.level2;public class PG_12939 {
+package programmers.level2;
+
+public class PG_12939 {
 }

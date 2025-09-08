@@ -1,6 +1,6 @@
-package programmers;
+package programmers.test;
 
-class Solution {
+class PG_155652 {
     public String solution(String s, String skip, int index) {
         StringBuilder sb = new StringBuilder();
         boolean[] skipped = new boolean[26];

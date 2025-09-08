@@ -1,6 +1,6 @@
-package programmers;
+package programmers.test;
 
-class Solution {
+class PG_178871 {
     public String[] solution(String[] players, String[] callings) {
 
         for (int i = 0; i < callings.length; i++) {

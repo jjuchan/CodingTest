@@ -1,18 +1,26 @@
 package programmers.test;
 
+import java.util.Map;
+
 class PG_178871 {
     public String[] solution(String[] players, String[] callings) {
+        Map<String, Integer> player = new java.util.HashMap<>();
+        for (int i = 0; i < players.length; i++) {
+            player.put(players[i], i);
+        }
+        for (String call : callings) {
+            int index = player.get(call);
 
-        for (int i = 0; i < callings.length; i++) {
-            for (int j = 0; j < players.length; j++) {
-                if (players[j].equals(callings[i]) && j != 0) {
-                    String temp = players[j];
-                    players[j] = players[j - 1];
-                    players[j - 1] = temp;
-                    break;
-                }
+            if (index > 0) {
+                String temp = players[index - 1];
+                players[index - 1] = players[index];
+                players[index] = temp;
+
+                player.put(call, index - 1);
+                player.put(temp, index);
             }
         }
+
         return players;
     }
 }

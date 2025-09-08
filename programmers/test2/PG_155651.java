@@ -1,9 +1,9 @@
-package programmers;
+package programmers.test2;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-class Solution {
+class PG_155651 {
     public int solution(String[][] book_time) {
 
         int n = book_time.length;

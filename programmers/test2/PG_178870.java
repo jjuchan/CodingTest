@@ -1,6 +1,6 @@
-package programmers;
+package programmers.test2;
 
-class Solution {
+class PG_178870 {
     public int[] solution(int[] sequence, int k) {
 
         int start = 0;

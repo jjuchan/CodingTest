@@ -1,4 +1,4 @@
-package programmers.test;
+package programmers.test2;
 
 import java.util.Map;
 

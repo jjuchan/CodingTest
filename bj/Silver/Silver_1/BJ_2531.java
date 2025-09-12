@@ -23,7 +23,7 @@ public class BJ_2531 {
         int[] count = new int[d + 1];
         int type = 0;
 
-        // 초기 윈도우 설정 (수정됨)
+        // 초기 윈도우 설정
         for (int i = 0; i < k; i++) {
             if (count[Sushis[i]] == 0) {
                 type++;
@@ -48,7 +48,7 @@ public class BJ_2531 {
 
             // 추가되는 초밥
             int input = Sushis[(i + k - 1) % N];
-            if (count[input] == 0) { // Sushis[input] → count[input]
+            if (count[input] == 0) {
                 type++;
             }
             count[input]++;

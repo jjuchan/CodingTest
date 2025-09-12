@@ -1,10 +1,11 @@
 package programmers.test2;
 
+import java.util.HashMap;
 import java.util.Map;
 
 class PG_178871 {
     public String[] solution(String[] players, String[] callings) {
-        Map<String, Integer> player = new java.util.HashMap<>();
+        Map<String, Integer> player = new HashMap<>();
         for (int i = 0; i < players.length; i++) {
             player.put(players[i], i);
         }

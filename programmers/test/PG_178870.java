@@ -1,4 +1,4 @@
-package programmers.test2;
+package programmers.test;
 
 class PG_178870 {
     public int[] solution(int[] sequence, int k) {

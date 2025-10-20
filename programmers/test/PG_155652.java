@@ -1,4 +1,4 @@
-package programmers.test2;
+package programmers.test;
 
 class PG_155652 {
     public String solution(String s, String skip, int index) {

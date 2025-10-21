@@ -2,7 +2,7 @@ name: Commit Message Lint
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ "*" ]
   pull_request:
 
 jobs:

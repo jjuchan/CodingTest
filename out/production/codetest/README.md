@@ -28,3 +28,23 @@
 | **예외 처리**       | `NoSuchElementException`, `InputMismatchException` 등 | `IOException` 발생, 직접 처리 필요           |
 | **버퍼링 여부**     | 기본 버퍼 크기 작음 (성능 한계 있음)           | 8192자 크기 기본 버퍼로 빠른 처리 가능         |
 | **사용 예시**       | 간단한 콘솔 입력, 학습용                      | 대용량 파일 입력, 속도 중요할 때               |
+
+
+> 📌 **커밋 메시지 컨벤션 (Conventional Commits)**
+
+| Type      | 의미 / 사용 시기                                       | 예시 메시지                        |
+|-----------|--------------------------------------------------------|----------------------------------|
+| feat      | 새로운 기능 추가                                      | feat: add login API               |
+| fix       | 버그 수정                                             | fix: resolve null pointer error   |
+| docs      | 문서 수정                                             | docs: update README               |
+| style     | 코드 포맷, 세미콜론 누락, 공백 등 스타일 변경         | style: format code with prettier  |
+| refactor  | 코드 리팩토링, 기능 변경 없음                          | refactor: improve service layer   |
+| perf      | 성능 개선                                             | perf: optimize query speed        |
+| test      | 테스트 코드 추가/수정                                  | test: add unit test for service  |
+| chore     | 빌드, 패키지 관리, 기타 잡일                            | chore: update npm dependencies    |
+| ci        | CI 설정 관련                                         | ci: add GitHub Actions workflow  |
+| revert    | 이전 커밋 되돌리기                                    | revert: revert "feat: add login" |
+
+> 💡 **사용 팁**
+> - 커밋 메시지는 `type: subject` 형식으로 작성
+> - subject는 소문자로 시작, 동사형으로 간결하게 작성

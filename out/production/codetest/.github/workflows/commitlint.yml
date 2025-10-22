@@ -1,0 +1,14 @@
+name: Commit Message Lint
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Commitlint
+        uses: wagoid/commitlint-github-action@v6

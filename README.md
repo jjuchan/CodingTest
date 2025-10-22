@@ -45,6 +45,4 @@
 | ci        | CI 설정 관련                                         | ci: add GitHub Actions workflow  |
 | revert    | 이전 커밋 되돌리기                                    | revert: revert "feat: add login" |
 
-> 💡 **사용 팁**
-> - 커밋 메시지는 `type: subject` 형식으로 작성
-> - subject는 소문자로 시작, 동사형으로 간결하게 작성
+

@@ -7,6 +7,7 @@ public class BJ_1292 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+
         // 구간의 시작 A와 끝 B
         int A = sc.nextInt();  // 구간의 시작 A
         int B = sc.nextInt();  // 구간의 끝 B

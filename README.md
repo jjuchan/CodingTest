@@ -30,6 +30,8 @@
 | **사용 예시**       | 간단한 콘솔 입력, 학습용                      | 대용량 파일 입력, 속도 중요할 때               |
 
 
+# 커밋 메시지 & GitHub Flow 가이드
+
 > 📌 **커밋 메시지 컨벤션 (Conventional Commits)**
 
 | Type      | 의미 / 사용 시기                                       | 예시 메시지                        |
@@ -45,4 +47,27 @@
 | ci        | CI 설정 관련                                         | ci: add GitHub Actions workflow  |
 | revert    | 이전 커밋 되돌리기                                    | revert: revert "feat: add login" |
 
+---
+
+## 🔹 GitHub Actions: Commitlint 설정
+
+```yaml
+# .github/workflows/commitlint.yml
+name: Commit Message Lint
+
+on:
+  push:
+    branches: [ "*" ]  # 모든 브랜치에 push 시 실행
+  pull_request:       # PR 생성/업데이트 시 실행
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Commitlint
+        uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: .commitlintrc.json    
+```
 

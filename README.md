@@ -46,6 +46,11 @@
 | chore     | 빌드, 패키지 관리, 기타 잡일                            | chore: update npm dependencies    |
 | ci        | CI 설정 관련                                         | ci: add GitHub Actions workflow  |
 | revert    | 이전 커밋 되돌리기                                    | revert: revert "feat: add login" |
+| design | CSS 등 디자인 수정 |
+| comment | 주석 추가/수정 |
+| test | 테스트 추가/수정 |
+| rename | 파일명/폴더명 변경 |
+| remove | 파일 삭제 |
 
 ---
 

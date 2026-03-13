@@ -53,26 +53,3 @@
 | remove | 파일 삭제 |
 | chore | 잡다한 일 |
 ---
-
-## 🔹 GitHub Actions: Commitlint 설정
-
-```yaml
-# .github/workflows/commitlint.yml
-name: Commit Message Lint
-
-on:
-  push:
-    branches: [ "*" ]  # 모든 브랜치에 push 시 실행
-  pull_request:       # PR 생성/업데이트 시 실행
-
-jobs:
-  commitlint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Commitlint
-        uses: wagoid/commitlint-github-action@v6
-        with:
-          configFile: .commitlintrc.json    
-```
-

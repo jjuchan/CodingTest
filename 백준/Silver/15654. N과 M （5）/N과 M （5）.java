@@ -40,7 +40,7 @@ public class Main {
 		for (int i = 0; i < N; i++) {
 			if (!visited[i]) {
 				visited[i] = true;
-				result[depth] = arr[i]; // ⭐ 핵심
+				result[depth] = arr[i]; 
 				dfs(depth + 1);
 				visited[i] = false;
 			}
